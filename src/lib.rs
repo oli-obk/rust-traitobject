@@ -31,4 +31,3 @@ fn test_simple() {
 pub unsafe trait Trait {}
 
 mod impls;
-
