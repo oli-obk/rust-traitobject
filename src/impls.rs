@@ -70,9 +70,6 @@ unsafe impl<T> Trait for dyn ::std::iter::Iterator<Item = T> + Send + Sync {}
 unsafe impl Trait for dyn ::std::marker::Send + Send {}
 unsafe impl Trait for dyn ::std::marker::Send + Sync {}
 unsafe impl Trait for dyn ::std::marker::Sync + Sync {}
-unsafe impl Trait for dyn ::std::ops::Drop + Send {}
-unsafe impl Trait for dyn ::std::ops::Drop + Sync {}
-unsafe impl Trait for dyn ::std::ops::Drop + Send + Sync {}
 unsafe impl Trait for dyn ::std::string::ToString + Send {}
 unsafe impl Trait for dyn ::std::string::ToString + Sync {}
 unsafe impl Trait for dyn ::std::string::ToString + Send + Sync {}
