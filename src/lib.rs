@@ -21,7 +21,7 @@ pub unsafe fn data_mut<T: ?Sized>(val: *mut T) -> *mut () {
 
 #[test]
 fn test_simple() {
-    let x = &7 as &Send;
+    let x = &7 as &dyn Send;
     unsafe { assert!(&7 == std::mem::transmute::<_, &i32>(data(x))) };
 }
 
